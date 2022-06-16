@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color:white;
+        }
+        .container{
+            display:flex;
+            height:100vh;
+           
+        }
+
+        img{
+            width: 400px;
+            height:400px;
+        }
+
+        .container_hijo1{
+            height:100%;
+            width: 50% ;
+
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+
+           
+        }
+
+        .container_hijo2{
+            width:50%;
+
+            background-color: rgb(21, 213, 171);
+            height: 100%;
+            display:flex;
+            flex-direction:column-reverse;
+           
+            /*align-items: flex-start;*/
+           
+            justify-content: center;
+            justify-content: space-around;
+            
+            
+           
+        }
+        p{
+
+            background-color: rgb(233, 11, 11);
+        }
+        h2{
+            background-color: rgb(192, 203, 40); 
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="container_hijo1">
+            <img src="netflix_nenes.png" alt="">
+        </div>
+           
+       <div class="container_hijo2">
+
+            <h2>Crea perfiles para niños.</h2>
+            <p>
+                Los niños vivirán .
+            </p>
+       </div>
+     
+      
+    </section>
+    
+</body>
+</html>

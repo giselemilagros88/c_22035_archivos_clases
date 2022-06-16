@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 22</title>
+</head>
+<body>
+    <script>
+
+        var datos = ["Ale", 24 ,"Perez"];
+        console.log(datos);
+        console.log(datos[0]);
+        console.log(datos[1]);
+        console.log(datos[2]);
+
+        // arrays anidados
+        var listaDeEstudiantes= [];
+        listaDeEstudiantes = [ ["Gaston",34] , 
+                               ["Pedro", 25],
+                               ["Camila",30] 
+                            ];
+        // acceder al segundo elemento del array 
+        console.log(listaDeEstudiantes[0]); 
+        console.log(listaDeEstudiantes[0][1]);
+        console.log(listaDeEstudiantes[2][0]);
+
+          // actualizar datos de un array que si son mutables 
+
+        var numeros= [10,20,30];
+        console.log(numeros);
+
+        numeros[0] = 40 ;
+        console.log(numeros);
+
+        var estaciones = ["invierno", "otoño","Verano"];
+
+        estaciones.push("primavera");
+        console.log(estaciones);
+        estaciones.pop();
+        console.log(estaciones);
+
+        var  miArray = [10,20,30,40];
+        var nuevoArray; 
+        nuevoArray = miArray.slice(1,4);
+        console.log(nuevoArray);
+
+        const fArray = [10,20,30,40,50];
+        const sArray= [60,70,80,90];
+        const tArray = ["nuevo"];
+        var nuevoArray ;  
+        nuevoArray = fArray.concat(sArray, tArray);
+        console.log(nuevoArray); 
+        console.log(fArray);
+        var unos = [];
+        console.log(Array.isArray(unos));
+
+        var misDatos = ["Gisele","Gonzalez",33];
+        console.log(misDatos.join(' '));
+        var numerosVarios=[6,7,8,3,5,2];
+        console.log(numerosVarios.keys());
+         console.log(
+           [...numerosVarios.keys()] // esto recorre al iterable y lo mete en un array
+            );
+
+        var orden=[8,16,4,2,9,3,1];
+        console.log(orden.sort());
+        //--puedo pasarle una funcion para que ordene con un criterio
+        //-- aca lo ordena como numeros en forma de reversa
+        console.log(orden.sort( (a,b) => b - a ) );
+        // aca lo ordena como numero de forma ascendente
+        console.log( orden.sort( (a,b) => a - b ));
+
+        console.log("desde aca");
+        console.log(fArray.entries());
+        
+        for (let[index,value] of fArray.entries()){
+            console.log(index , value);
+        }
+        /* este no es bucle que se puede recorrer
+        for (let[index,value] of fArray){
+            console.log(index , value);
+            
+        }*/
+
+        for(let i = 0; i<fArray.length; i++){
+            console.log(i,fArray[i]);
+        }
+
+        sArray.forEach( (value, index) => {console.log(value,index)})
+
+        var original = [10,20,30,40];
+        var segundo ;
+        //-- aca se pueden hacer cualquier tipo de operaciones
+        //-- en este caso estamos multiplicando el valor 
+        // adentro de map podemos hacer nuestras propias funciones
+        segundo = original.map(value => value * 2);
+        console.log(original);
+        console.log(segundo);
+        
+        
+    </script>
+</body>
+</html>

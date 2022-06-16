@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 18 js</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+        var numeroString = '6';
+        var numeroEntero = 6;
+
+        // esto devuelve true
+        if(numeroString == numeroEntero) {
+          console.log("son iguales");
+        }
+
+        // esto devuelve false
+        if(numeroString === numeroEntero) {
+            console.log("son iguales validacion nro2");
+        }
+        else
+        {
+            console.log("no son iguales entro al else");
+        }
+
+        var prueba;
+        var prueba2;
+        console.log(prueba);
+        console.log(prueba2);
+        if (prueba===prueba2){
+            console.log("true");
+        }
+
+        console.log(4>2);
+        console.log(! (4>2) );
+        console.log(4>2 && 5>1); 
+        console.log(4>2 && 1>3);
+        console.log(4>2 || 3>1);
+        console.log(4>2 || 3<1);
+        var boleano = true ;
+        var numerico = 6;
+        var numerico_flotante = 6.0;
+        var texto = "mi texto";
+        var fecha = new Date(); 
+        var indefinida;
+
+        document.write("<br>El tipo de boleano es: " + typeof(boleano))
+        document.write("<br>El tipo de numerico es: " + typeof(numerico))
+        document.write("<br>El tipo de numerico_flotante es: " + typeof(numerico_flotante))
+        document.write("<br>El tipo de texto es: " + typeof(texto))
+        document.write("<br>El tipo de fecha es: " + typeof(fecha)) 
+       
+
+        document.write("<br>El valor de fecha es: " + fecha)
+
+        document.write("<br>El tipo de dato de indefinida es: " + typeof(indefinida));
+
+        indefinida = 33;
+
+        document.write("<br>El tipo de dato de indefinida es: " + typeof(indefinida));
+
+        indefinida = "gisele";
+        document.write("<br>El tipo de dato de indefinida es: " + typeof(indefinida));
+
+        */
+        
+        //alert ( "Hola Mundo JavaScript" );
+        var texto = 'Hola mundo JavaScript DESDE UNA VARIABLE';
+     //   alert (texto);
+
+        var numero = 10;
+      //  alert (numero);
+
+       var concateno = 50;
+      // alert('Se esta concatenando una variable ' + concateno);
+
+       // alert("esto es una alerta");
+      //  var nombre = prompt ('Ingrese su nombre');
+       // document.write("<br>" + nombre );
+
+        var edad = prompt('Ingrese su edad');
+        console.log( typeof(edad) );
+        console.log("que tiene adentro edad: " ,parseInt(edad));
+        
+        if(parseInt(edad)){ // true NaN
+            // aca se cumple la condicion que valido en el if 
+            console.log("es un numero");
+            document.write("<br>" + edad);
+        }
+        else{ //false 
+            // sino se cumple la condicion que esta en el if entra al else 
+           
+            console.log("no es un numero");
+        }
+
+        // esta manera  no sirve para validar si es en un numero o no 
+        var edadAux = parseInt(edad);
+        if(edadAux == 'NaN'){
+            console.log("no es un numero2");
+        }
+        else{
+            console.log("es un numero1");
+        }
+
+        
+
+       
+
+      
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+ 
+    <script>
+        /*consigna*/
+          // juego de piedra papel o tijera
+        // generar variable valorElegido
+        // generar variable valorMaquina, con piedra papel o tijera inicializado
+       // var valorElegido;
+       // var valorMaquina = "piedra";
+       // valorElegido = ....... ;
+        // generar variable resultado
+        // pedir mediante prompt que el usuario ingrese piedra, papel o tijera y guardar en valorElegido
+        // hacer una logica de validacion de las variables valorElegido contra valorMaquina
+        // si la variable seleccionada es igual a la variable del usuario, entonces empate, 
+        // si la variable del usuario es piedra y la del programa es tijera, gana usuario
+        // si la variable del usuario es papel y la del programa es piedra, gana usuario
+        // si la variable del usuario es tijera y la del programa es papel, gana usuario
+        // si la variable del usuario es tijera y la del programa es piedra, gana programa
+        // si la variable del usuario es piedra y la del programa es papel, gana programa
+        // si la variable del usuario es papel y la del programa es tijera, gana programa
+
+        var valorElegido;
+        var valorMaquina = "papel";
+        valorElegido = prompt("Ingrese piedra, papel o tijera;");
+        var resultado;
+ 
+        if (valorElegido === valorMaquina) {
+            resultado ="empate";
+            alert("Empate");
+        }
+        else if (valorElegido == "papel" && valorMaquina == "tijera") {
+            alert("Gano yo! tengo: " + valorMaquina);
+        }
+        else if (valorElegido == "tijera" && valorMaquina == "piedra") {
+            alert("Gano yo! tengo: " + valorMaquina);
+        }
+        else if (valorElegido == "piedra" && valorMaquina == "papel") {
+            alert("Gano yo! tengo: " + valorMaquina);
+        }
+        else if (valorMaquina == "papel" && valorElegido == "tijera") {
+            alert("Ganas vos!");
+        }
+        else if (valorMaquina == "tijera" && valorElegido == "piedra") {
+            alert("Ganas vos!");
+        }
+        else if (valorMaquina == "piedra" && valorElegido == "papel") {
+            alert("Ganas vos!");
+        }
+        else {
+            alert("Hubo un error");
+        }
+      
+
+        /*
+
+        if ( variables iguales) {
+           empate
+        }
+        if(piedra tijera){
+            gana la maquina 
+        }
+        if(piedra tijera){
+            gana la maquina 
+        } 
+        if(piedra tijera){
+            gana la maquina 
+        }     
+        if(piedra tijera){
+            gana el usuario
+        }   
+        if(piedra tijera){
+            gana el usuario 
+        }   
+        if(piedra tijera){
+            gana el usuario
+        }   
+        if(valor del usuario != piedra papel tijera){
+            gana el usuario
+        }    
+
+        */
+    </script>
+</body>
+ 
+</html>

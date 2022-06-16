@@ -1,0 +1,66 @@
+*{
+    padding:0px;
+  
+}
+
+body{
+    background-image: linear-gradient(to top, #f4f456, #ffb635, #ff6a5c, #ff009a, #c425dc);
+}
+
+
+nav ul li{
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.bg{
+    background-color: rgb(50, 11, 87);
+    color:rgb(218, 200, 236);
+    font-style: italic;
+    font-weight: bold;
+
+
+}
+
+.fuente{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.color{
+    color: rgb(255, 255, 255);
+}
+
+.alineacion{
+    text-align: center;
+}
+
+.centrar_texto,
+.centrar_div,
+.centrar_seccion{
+    text-align: center;
+}
+
+#seccion_videoJuegos{
+    background-color: rgb(92, 204, 157);
+    font-size: 30px;
+    color: #541441;
+}
+
+section{
+    background-color: rgb(211, 20, 20) !important;
+ 
+}
+
+
+.clasex{
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}

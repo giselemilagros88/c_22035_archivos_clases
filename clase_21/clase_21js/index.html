@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 21</title>
+</head>
+<body>
+
+    <script>
+
+        /*funciones*/
+
+        // declaracion de la funcion que muestra un mensaje en el documento 
+        function mostrarMensaje()
+        {
+            document.write("se esta ejecutando la funcion<br>");
+        }
+        
+        //***********************************************************************
+        function funcionSumaRetornaValor( a , b){
+           // let sumaDentroFuncion ;
+           // sumaDentroFuncion = a + b ;
+
+           // return sumaDentroFuncion;
+           return a + b;
+        }
+
+        const funcionSumar = (a,b) => a + b;
+
+        function validar( a , b){
+
+            if(a > 20){
+                return true;
+            }else{
+                return a+b;
+            }
+         
+          /* 
+           let suma = a + b ;
+           return suma;*/
+          
+        }
+
+
+
+        //***********************************************************************
+        
+        /*
+        (function ( a , b ,c) {
+            document.write("<br>")
+            document.write("ejecutando la funcion");
+            document.write("<br>")
+            document.write(a+b);
+        } )( 3, 4); 
+
+        var suma =(function ( a , b) {
+            document.write("<br>")
+            document.write("ejecutando la funcion");
+            document.write("<br>")
+            document.write(a+b);
+            return true;
+        } )(4,5);*/
+
+      
+        /*
+        let suma = funcionSumaRetornaValor(5,6);
+        console.log("variable suma:"+ suma);
+        console.log("funcion sin variable: "+funcionSumaRetornaValor(5,6));
+
+        document.write("la suma es: " + funcionSumaRetornaValor(5,6));
+        suma = "hola" + 78;
+        suma = funcionSumaRetornaValor("Hola ",34);
+        console.log(suma);*/
+        
+
+        // SIGUE ACA CUANDO TERMINA 
+
+
+    </script>
+
+   
+    
+</body>
+</html>

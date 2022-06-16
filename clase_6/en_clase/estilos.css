@@ -1,0 +1,18 @@
+
+article{
+    background-color: crimson;
+}
+
+h2{
+    color:red;
+}
+
+
+article h2{
+    color:darkgreen;
+}
+
+h2{
+    color:blue;
+}
+

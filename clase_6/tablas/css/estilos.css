@@ -1,0 +1,155 @@
+/*esto es un comentario */
+
+/*selectores
+ simples
+    a-elementales
+    b-de atributos
+compuestos
+    a-agrupados
+    b-combinadores
+    c-pseudoclases
+    d-pseudoelementos
+
+simples a: 
+    universal = *{}
+    de tipo o etiqueta = nombreetiqueta{}
+simples b:
+    id = #nombreid{}  no es recomendable dar styles con id ya que la idea de css es reutilizar codigo 
+                      y los id son unicos por etiqueta
+                      los id son keysensitive es decir que se debe respetar mayusculas y minusculas que tiene el html
+                      se usan por convención lowerkeys, es decir id en minuscula
+    clase = .nombredeclase{} no hay un limite de clases que se le pueden aplicar a un elemento
+            con clases, se dan estilos reutilizables
+    atributo = [atributo]{}
+               [href]{}
+               [href="https://google.com"]{}
+               los estilos se aplican en cascada es decir que el ultimo 
+               es el que se aplica en caso de que no tenga estilos en linea en el html
+               alt+94 (acento circunflejo)
+               [atributo^="valor"]{} el atributo empieza con ese valor
+               [atributo*="valor"]{} el atributo contiene ese valor
+               alt+36(dolar)
+               [atributo$="valor"]{} el atributo termina con ese valor
+compuestos:
+a-agrupados:
+    coloca-mos todas las clases que queremos que tengan el mismo estilo
+    .clase_1,
+    .clase_2,
+    .clase_3{ estilo a aplicar}
+
+b-combinadores
+selectores descendientes, se seleccionan los hijos de un padre, por ahora no se puede acceder a un padre por un hijo
+etiqueta padre 
+<div class="div-padre"> 
+    <p class="p-hijo"> parrafo hijo del div </p>
+</div>
+   .div-padre .p-hijo{}
+
+   otro forma de hacerlo es
+   div .p-hijo{}
+
+   div p{}
+
+   es buena practica bajar solo un nivel 
+
+selectores hermano siguiente:
+    estan en el mismo nivel dentro del padre que los contiene 
+    <div class="div-padre"> 
+         <h2 class="h2-hijo"> Titulo hijo del div </h2>
+         <p class="p-hijo"> parrafo hijo del div </p>
+    </div>
+
+    .h2-hijo + .p-hijo{}
+
+acceso a traves de hermano siguiente
+#parrafo-2 + .parrafo-3{
+    font-size: 40px;
+}
+
+*/
+/*todo el documento*/
+/*
+*{
+    background-color:#BAFFB4;
+}
+*/
+
+/*generador de colores para html 
+https://colorhunt.co/ 
+*/
+body{
+    background-color:#BAFFB4;
+    /*fotos random para maquetar 
+    https://picsum.photos/ */
+    background-image: url("https://picsum.photos/1820?grayscale&blur=2");
+   /* height: 600px;*/
+    
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+       
+     margin-bottom:50px;
+   }
+   
+/*acceso a traves de etiquetas ultimo en procedencia*/
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #072227;
+}
+
+
+/*acceso a hijos de un padre*/
+#div p{
+    background-color: #FFFDA2;
+}
+
+/*acceso a traves de  clases*/
+.parrafo-1bis{
+    background-color: lawngreen;
+}
+
+/*acceso a traves de  id*/
+
+#div{
+    background-color: lightskyblue;
+}
+
+/*el mismo estilo a varias clases*/
+
+.p1,
+.p2,
+.p3{
+    background-color: mediumpurple;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: midnightblue;
+    line-height: 1.6; /*interlineado*/
+}
+
+header{
+    background-color: #FF6363;
+}
+nav{
+    text-align: right;
+   
+}
+/*todos los a que tienen como padre un nav*/
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+/*como alinear contenido*/
+.sec_1{
+    text-align: center;
+    background-color: #FFAB76;
+    width: 800px;
+    margin: auto;
+}
+
+.sec_1 img{
+    width:400px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interruptor</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'poppins', sans-serif;
+        }
+
+        html , body{
+            display: grid;
+            height: 100%;
+            place-items: center;
+            background: #664AFF;
+        }
+
+        .checkbox{
+            height:80px;
+            width:270px;
+            padding:20px;
+            display: flex;
+            background: #fff;
+            align-items : center;
+            border-radius: 5px;
+            box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+            justify-content: space-between;
+        }
+        .checkbox input{
+            outline: none;
+            height:40px;
+            width:90px;
+            border-radius: 50px;
+            -webkit-appearance: none;
+            position: relative;
+            background: #e6e6e6;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            transition: 0.4s cubic-bezier(0.68, -0.55,0.265, 1.55);
+        }
+        .checkbox input:checked{
+            background: #664AFF;
+        }
+        .checkbox input::before{
+            position: absolute;
+            content:""; 
+            left:0px;
+            height: 100%;
+            width:40px;
+            background:linear-gradient(#fff , #f2f2f2,#e6e6e6,#d9d9d9);
+            box-shadow:  0px 2px 5px rgba(0,0,0,0.2);
+            border-radius: 50px;
+            transform: scale(0.85);
+            transition: left 0.4s cubic-bezier(0.68, -0.55,0.265, 1.55);
+        }
+
+        input:checked::before{
+            left:50px;
+           
+        }
+
+
+        .checkbox .text::before{
+            content: "Claro";
+            font-size: 25px;
+            font-weight: 500;
+            color:#bfbfbf;
+           
+        }
+        /*este selector indica que si el input esta checkeado que al hermano siguiente que es el 
+        label, se le aplique un contenido y cambie de color la letra*/
+        .checkbox input:checked + .text::before{
+            content: "Oscuro";
+            font-size: 25px;
+            font-weight: 500;
+            color: #664AFF;
+           
+        }
+       
+
+      
+    </style>
+</head>
+<body>
+    <h1>Interruptor</h1>
+    <div class="checkbox">
+       
+        <input type="checkbox" id="click">
+        <label for="click" class="text"></label>
+       
+    </div>
+   
+    
+</body>
+</html>
